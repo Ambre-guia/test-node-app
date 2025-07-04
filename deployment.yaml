@@ -14,5 +14,7 @@ spec:
     spec:
       containers:
       - name: node
-        image: node:18
+        image: ambreguia/node-app:latest
         command: ["node", "server.js"]
+        ports:
+        - containerPort: 3000
